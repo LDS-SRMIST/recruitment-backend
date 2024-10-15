@@ -1,0 +1,35 @@
+{
+  "name": "ldss-backend",
+  "version": "1.0.0",
+  "description": "backend for ldss recruitments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "biome check ./src && tsc --build",
+    "format": "biome check --write --unsafe .",
+    "lint": "biome check .",
+    "dev": "tsx watch ./src/index.ts",
+    "start": "node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.3",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@types/body-parser": "^1.19.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "mongodb": "^6.9.0",
+    "winston": "^3.15.0",
+    "zod": "^3.23.8"
+  },
+  "packageManager": "pnpm@9.0.0"
+}
